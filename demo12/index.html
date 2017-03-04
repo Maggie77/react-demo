@@ -38,6 +38,7 @@ var RepoList = React.createClass({
           <li key={index}><a href={repo.html_url}>{repo.name}</a> ({repo.stargazers_count} stars) <br/> {repo.description}</li>
         );
       });
+      console.log( repoList instanceof Array );
       return (
         <main>
           <h1>Most Popular JavaScript Projects in Github</h1>
